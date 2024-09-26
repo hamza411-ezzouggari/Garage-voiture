@@ -1,0 +1,179 @@
+.guarantee-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: #2C2D2E; /* Fond gris foncé */
+  padding: 0;
+  height: 70vh; /* Prend toute la hauteur de l'écran */
+}
+
+.guarantee-container {
+  display: flex;
+  width: 100%;
+}
+
+.guarantee-content {
+  flex-basis: 50%; /* Prend 50% de l'espace disponible */
+  padding: 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.guarantee-image {
+  flex-basis: 53.7%; /* Prend 50% de l'espace disponible */
+  height: 100%; /* Prend toute la hauteur de l'écran */
+  overflow: hidden;
+}
+
+.guarantee-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* L'image couvre bien l'espace */
+}
+
+.guarantee-content h1 {
+  font-size: 4em;
+  font-weight: 300;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  color: #C8C8C8;
+}
+
+.guarantee-content h2 {
+  font-size: 6em;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.guarantee-content p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #A2A3A3;
+}
+
+.read-more-btn-car{
+  padding: 10px 20px;
+  background-color: #4C4E50!important;
+  color: #ffffff;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.read-more-btn-car:hover {
+  background-color: #ff0400 !important;
+  color: #ffffff !important;
+  opacity: 0.8;
+}
+
+@media (max-width: 1024px) {
+  .guarantee-section {
+    height: auto; /* Ajuste la hauteur sur les écrans moyens */
+    flex-direction: column; /* Colonne sur les tablettes */
+  }
+
+  .guarantee-image, .guarantee-content {
+    flex-basis: 100%; /* Chaque section prend toute la largeur disponible */
+    height: 50vh; /* Ajuste la hauteur de l'image */
+  }
+
+  .guarantee-content {
+    padding: 30px; /* Réduit le padding */
+  }
+
+  .guarantee-content h1, .guarantee-content h2 {
+    font-size: 3em; /* Réduit la taille des titres */
+  }
+
+  .guarantee-content p {
+    font-size: 1em; /* Réduit la taille du texte */
+  }
+}
+
+/* Pour les petits écrans (moins de 768px) */
+@media (max-width: 768px) {
+  .guarantee-section {
+    flex-direction: column; /* Colonne sur les petits écrans */
+    height: auto;
+  }
+
+  .guarantee-image {
+    order: -1; /* Place l'image en premier */
+    height: 55vh; /* Ajuste la hauteur de l'image sur mobile */
+  }
+
+  .guarantee-content {
+    padding: 20px; /* Réduit encore le padding */
+  }
+
+  .guarantee-content h1 {
+    font-size: 2.5em; /* Réduit la taille des titres */
+  }
+
+  .guarantee-content h2 {
+    font-size: 4em; /* Réduit la taille du sous-titre */
+  }
+
+  .guarantee-content p {
+    font-size: 0.9em; /* Réduit la taille du texte */
+  }
+
+  .read-more-btn-car {
+    padding: 8px 16px; /* Réduit la taille du bouton */
+    font-size: 0.9em;
+  }
+}
+
+/* Pour les très petits écrans (moins de 480px) */
+@media (max-width: 480px) {
+  .guarantee-image {
+    height: 30vh; /* Réduit encore la hauteur de l'image */
+  }
+
+  .guarantee-content h1 {
+    font-size: 2em; /* Réduit encore la taille des titres */
+  }
+
+  .guarantee-content h2 {
+    font-size: 3em; /* Réduit la taille du sous-titre */
+  }
+
+  .guarantee-content p {
+    font-size: 0.8em; /* Réduit la taille du texte */
+  }
+
+  .read-more-btn-car {
+    padding: 6px 12px; /* Ajuste la taille du bouton */
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 450px) {
+  .guarantee-image {
+    height: 57vh; /* Ajuste la hauteur de l'image pour 375px */
+  }
+
+  .services-content {
+    padding: 15px; /* Réduction du padding pour petits écrans */
+  }
+
+  .services-content h1 {
+    font-size: 1.8em; /* Réduction de la taille des titres principaux */
+  }
+
+  .services-content h2 {
+    font-size: 2.8em; /* Réduction de la taille des sous-titres */
+  }
+
+  .services-content p {
+    font-size: 0.75em; /* Réduction de la taille du texte des paragraphes */
+  }
+
+  .read-more-btn {
+    padding: 5px 10px; /* Réduction du padding du bouton */
+    font-size: 0.75em; /* Réduction de la taille du texte du bouton */
+  }
+}

@@ -1,0 +1,183 @@
+.best-services {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Assure que les deux colonnes prennent toute la hauteur */
+  background-color: #EA202E; /* Fond rouge */
+  padding: 0; /* Retire le padding pour que l'image occupe tout l'espace disponible */
+  height: 70vh; /* La section prend toute la hauteur de la fenêtre */
+}
+
+.services-container {
+  display: flex;
+  width: 100%; /* Prend toute la largeur de l'écran */
+  margin: 0;
+}
+
+.services-image {
+  flex-basis: 55%; /* Prend 50% de l'espace */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Prend toute la hauteur */
+  overflow: hidden; /* Cache toute partie de l'image qui dépasse */
+}
+
+.services-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Assure que l'image couvre tout l'espace sans déformation */
+}
+
+.services-content {
+  flex-basis: 50%; /* Prend 50% de l'espace */
+  padding: 50px; /* Ajuste l'espacement pour le texte */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.services-content h1 {
+  font-size: 4em;
+  font-weight: 300;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.services-content h2 {
+  font-size: 6em;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.services-content p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #F7A6AB;
+}
+
+.read-more-btn {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.read-more-btn:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+/* Pour les écrans entre 768px et 1024px */
+@media (max-width: 1024px) {
+  .best-services {
+    height: auto; /* Ajuste la hauteur sur les écrans moyens */
+    flex-direction: column; /* Colonne sur les tablettes */
+  }
+
+  .services-image, .services-content {
+    flex-basis: 100%; /* Chaque section prend toute la largeur disponible */
+    height: 50vh; /* Ajuste la hauteur de l'image */
+  }
+
+  .services-content {
+    padding: 30px; /* Réduit le padding */
+  }
+
+  .services-content h1, .services-content h2 {
+    font-size: 3em; /* Réduit la taille des titres */
+  }
+
+  .services-content p {
+    font-size: 1em; /* Réduit la taille du texte */
+  }
+}
+
+/* Pour les petits écrans (moins de 768px) */
+@media (max-width: 768px) {
+  .best-services {
+    flex-direction: column; /* Colonne sur les petits écrans */
+    height: auto;
+  }
+
+  .services-image {
+    order: -1; /* Place l'image en premier */
+    height: 55vh; /* Ajuste la hauteur de l'image sur mobile */
+  }
+
+  .services-content {
+    padding: 20px; /* Réduit encore le padding */
+  }
+
+  .services-content h1 {
+    font-size: 2.5em; /* Réduit la taille des titres */
+  }
+
+  .services-content h2 {
+    font-size: 4em; /* Réduit la taille du sous-titre */
+  }
+
+  .services-content p {
+    font-size: 0.9em; /* Réduit la taille du texte */
+  }
+
+  .read-more-btn {
+    padding: 8px 16px; /* Réduit la taille du bouton */
+    font-size: 0.9em;
+  }
+}
+
+/* Pour les très petits écrans (moins de 480px) */
+@media (max-width: 480px) {
+  .services-image {
+    height: 30vh; /* Réduit encore la hauteur de l'image */
+  }
+
+  .services-content h1 {
+    font-size: 2em; /* Réduit encore la taille des titres */
+  }
+
+  .services-content h2 {
+    font-size: 3em; /* Réduit la taille du sous-titre */
+  }
+
+  .services-content p {
+    font-size: 0.8em; /* Réduit la taille du texte */
+  }
+
+  .read-more-btn {
+    padding: 6px 12px; /* Ajuste la taille du bouton */
+    font-size: 0.8em;
+  }
+}
+/* Pour les écrans de 375px */
+@media (max-width: 450px) {
+  .services-image {
+    height: 55vh; /* Ajuste la hauteur de l'image pour 375px */
+  }
+
+  .services-content {
+    padding: 15px; /* Réduction du padding pour petits écrans */
+  }
+
+  .services-content h1 {
+    font-size: 1.8em; /* Réduction de la taille des titres principaux */
+  }
+
+  .services-content h2 {
+    font-size: 2.8em; /* Réduction de la taille des sous-titres */
+  }
+
+  .services-content p {
+    font-size: 0.75em; /* Réduction de la taille du texte des paragraphes */
+  }
+
+  .read-more-btn {
+    padding: 5px 10px; /* Réduction du padding du bouton */
+    font-size: 0.75em; /* Réduction de la taille du texte du bouton */
+  }
+}

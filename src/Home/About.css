@@ -1,0 +1,48 @@
+.about-section {
+  background-color: #2c2c2c; 
+  color: #fff;
+  text-align: center;
+  padding: 100px 10px;
+  font-family: 'Arial', sans-serif;
+}
+
+.about-section h1 {
+  font-size: 3em; /* Taille du texte du titre principal */
+  font-weight: 100; /* Poids du texte plus fin */
+  margin-bottom: 1px; /* Réduire l'espace sous le titre */
+  text-transform: uppercase; /* Mettre le texte en majuscules */
+  color: #E9E9E9;
+}
+
+.about-section h2 {
+  font-size: 6em; /* Taille du sous-titre */
+  font-weight: 700; /* Texte en gras */
+  margin-top: 0; /* Élimine tout espace au-dessus */
+  margin-bottom: 20px; /* Espace sous le sous-titre */
+}
+
+.about-section p {
+  font-size: 1.2em; /* Taille du paragraphe */
+  line-height: 1.6em; /* Hauteur de ligne pour une meilleure lisibilité */
+  margin-bottom: 40px; /* Espace sous le paragraphe */
+  max-width: 800px; /* Largeur maximale du paragraphe */
+  margin-left: auto;
+  margin-right: auto;
+  color: #ABABAB;
+}
+
+.about-section .btn {
+  background-color: #e02828; /* Couleur du bouton */
+  color: #fff; /* Couleur du texte du bouton */
+  padding: 15px 30px; /* Taille du bouton */
+  text-transform: uppercase; /* Texte en majuscules */
+  font-size: 1.2em; /* Taille du texte du bouton */
+  border: none; /* Pas de bordure */
+  border-radius: 5px; /* Légères bordures arrondies */
+  cursor: pointer; /* Curseur pointer */
+  transition: background-color 0.3s ease; /* Animation sur la couleur de fond */
+}
+
+.about-section .btn:hover {
+  background-color: #d00f0f; /* Couleur du bouton lors du survol */
+}

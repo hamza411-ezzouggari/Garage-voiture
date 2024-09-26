@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.AutoplaySlider {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden; /* Empêche le débordement horizontal */
+}
+.text-overlay {
+    background-color: #6363634d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    width: 90%;
+}
+  
+.text-overlay h1 {
+    font-size: 3em; /* Adjust this value to match the size in your image */
+    font-weight: 100; /* Bold text */
+    margin: 0;
+    letter-spacing: 0.05em; /* Slight spacing between letters */
+}
+  
+  .large-text {
+    font-size: 6em !important; 
+    font-weight: 900 !important; 
+  }
+  
+  .text-overlay p {
+    font-size: 1.2em; 
+    max-width: 180vh;
+    margin: 20px auto 0; 
+    line-height: 1.5em;
+    color: #e9e9e9e5;
+  }
+
+
+
+  @media (max-width: 1024px) {
+  .AutoplaySlider {
+    height: 80vh; /* Réduit la hauteur de la section sur les tablettes */
+  }
+
+  .text-overlay {
+    width: 90%; /* Ajuste la largeur */
+  }
+
+  .text-overlay h1 {
+    font-size: 2.5em; /* Réduit la taille du texte */
+  }
+
+  .large-text {
+    font-size: 4.5em !important; /* Réduit la taille du texte large */
+  }
+
+  .text-overlay p {
+    font-size: 1.1em; /* Ajuste la taille du paragraphe */
+  }
+}
+
+/* Pour les petits écrans (moins de 768px, mobiles) */
+@media (max-width: 768px) {
+  .AutoplaySlider {
+    height: 60vh; /* Réduction supplémentaire de la hauteur */
+  }
+
+  .text-overlay {
+    width: 95%; /* Plus large pour correspondre à la taille de l'écran */
+  }
+
+  .text-overlay h1 {
+    font-size: 2rem; /* Réduction de la taille du texte principal */
+  }
+
+  .large-text {
+    font-size: 3.5rem !important; /* Ajustement de la taille du texte large */
+  }
+
+  .text-overlay p {
+    font-size: 1rem; /* Ajustement de la taille du texte */
+  }
+}
+
+/* Très petits écrans (moins de 480px) */
+@media (max-width: 480px) {
+  .AutoplaySlider {
+    height: 50vh; /* Hauteur plus basse pour les très petits écrans */
+  }
+
+  .text-overlay {
+    width: 100%; /* Prend toute la largeur */
+  }
+
+  .text-overlay h1 {
+    font-size: 1.8rem; /* Réduction de la taille du texte */
+  }
+
+  .large-text {
+    font-size: 3rem !important; /* Ajustement de la taille du texte large */
+  }
+
+  .text-overlay p {
+    font-size: 0.9rem; /* Réduction de la taille du paragraphe */
+  }
+}
+/* Très petits écrans (moins de 375px) */
+@media (max-width: 375px) {
+  .AutoplaySlider {
+    height: 45vh; /* Réduit encore la hauteur pour petits écrans */
+  }
+
+  .text-overlay {
+    width: 100%; /* Prend toute la largeur */
+  }
+
+  .text-overlay h1 {
+    font-size: 1.6rem; /* Réduit la taille du texte principal */
+  }
+
+  .large-text {
+    font-size: 2.8rem !important; /* Ajuste la taille du texte large */
+  }
+
+  .text-overlay p {
+    font-size: 0.85rem; /* Réduit la taille du paragraphe */
+  }
+}

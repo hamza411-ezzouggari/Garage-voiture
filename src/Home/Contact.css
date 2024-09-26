@@ -1,0 +1,278 @@
+  /* Container principal */
+  .contact-container-test {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70vh;
+    width: 100vw;
+    overflow: hidden; /* Empêche les éléments de déborder du conteneur */
+  }
+  .image-spped {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* L'image prendra la largeur du conteneur */
+    height: 100%; /* Prend la hauteur du conteneur parent */
+    z-index: -1; /* Assure que l'image est derrière le contenu */
+    overflow: hidden; /* Empêche toute partie de l'image de déborder */
+  }
+  .image-spped img {
+    width: 100%; /* L'image s'adapte à la largeur de la div */
+    height: 100%; /* L'image s'adapte à la hauteur de la div */
+    filter: blur(8px);
+  }
+  
+  .map-section, .form-section {
+    z-index: 1;
+    position: relative;
+  }
+  
+  /* Section de la carte */
+  .map-section {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 50vw;
+    padding: 20px;
+    box-sizing: border-box; /* Cela garantit que le padding ne dépasse pas */
+  }
+  
+  /* Section de la carte Google avec message d'erreur */
+  .Map{
+    width: 40vw;
+    height: 20vh !important;
+  }
+  .google-map {
+    background-color: #ddd;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .map-error {
+    background-color: #ddd;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Section du formulaire et des infos */
+  .contact-form {
+    height: 60vh;
+    width: 50vw;
+    padding: 20px;
+    box-sizing: border-box; /* Cela garantit que le padding ne dépasse pas */
+}
+  .form-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .contact-form, .contact-info {
+    margin-bottom: 20px;
+  }
+  
+  /* Formulaire de contact */
+.title-contact{
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+}
+.title-contact h1{
+  font-size: 4em;
+  font-weight: 200;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  color: #7A7C7D;
+}
+.title-contact h2{
+  font-size: 5em;
+  font-weight: 700;
+  margin-top: 0;
+  color: #FFFFFF;
+}
+  
+  .contact-form input, .contact-form textarea {
+    width: 45vw;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #555;
+    color: rgb(255, 255, 255) !important;
+  }
+  
+  .contact-form textarea {
+    height: 100px;
+    resize: none;
+    color: #991010;
+  }
+  
+  .contact-form button {
+    padding: 10px;
+    background-color: #555;
+    color: white;
+    border: none;
+    width: 45.9vw;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .contact-form button:hover {
+    background-color: #777;
+  }
+  
+  /* Section CAPTCHA */
+  .captcha {
+    display: flex;
+    align-items: center;
+  }
+  
+  .captcha input {
+    margin-right: 10px;
+  }
+  
+  /* Infos de contact */
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    margin: 290px 0px 0px 0px;
+  }
+  .contact-info p {
+    margin: 5px 0;
+    color: #FFFFFF;
+    margin: 10px 0px 0px 10px;
+  }
+  .icon22{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .icon222{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgba(255, 0, 0, 0.651);
+  }
+  /* Tablettes (écrans entre 768px et 1024px) */
+@media (max-width: 1024px) {
+  .contact-container-test {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .map-section, .contact-form {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .contact-form input, .contact-form textarea {
+    width: 90vw;
+  }
+
+  .contact-form button {
+    width: 91vw;
+  }
+}
+
+/* Téléphones (écrans en dessous de 768px) */
+@media (max-width: 768px) {
+  .title-contact h1 {
+    font-size: 2.5em;
+  }
+
+  .title-contact h2 {
+    font-size: 3em;
+  }
+
+  .map-section, .contact-form {
+    width: 100%;
+    height: auto;
+  }
+
+  .Map, .contact-form input, .contact-form textarea {
+    width: 90vw;
+  }
+
+  .contact-form button {
+    width: 92vw;
+  }
+
+  .google-map {
+    height: auto;
+    padding: 10px;
+  }
+}
+
+/* Petits écrans mobiles (en dessous de 480px) */
+@media (max-width: 480px) {
+  .title-contact h1 {
+    font-size: 2em;
+  }
+
+  .title-contact h2 {
+    font-size: 2.5em;
+  }
+
+  .Map, .contact-form input, .contact-form textarea {
+    width: 95vw;
+  }
+
+  .contact-form button {
+    width: 96vw;
+  }
+}
+/* Petits écrans mobiles (en dessous de 360px) */
+@media (max-width: 450px) {
+  /* Réduction de la taille des titres pour les petits écrans */
+  .title-contact h1 {
+    font-size: 1.8em; /* Réduction de la taille du titre principal */
+  }
+
+  .title-contact h2 {
+    font-size: 2.2em; /* Réduction de la taille du sous-titre */
+  }
+
+  /* Ajustement des sections de la carte et du formulaire */
+  .Map, .contact-form input, .contact-form textarea {
+    width: 90vw; /* Utilisation presque complète de la largeur de l'écran */
+  }
+
+  .contact-form button {
+    width: 9ovw; /* Le bouton occupe presque toute la largeur de l'écran */
+  }
+
+  /* Réduction de la hauteur de la section Google Map */
+  .google-map {
+    height: auto;
+    padding: 15px; /* Légère augmentation du padding pour l'espacement */
+    width: 37vh !important;
+  }
+
+  /* Ajustements supplémentaires pour la section du formulaire */
+  .contact-form {
+    padding: 10px; /* Réduction du padding interne pour un meilleur ajustement */
+  }
+
+  .contact-form input, .contact-form textarea {
+    font-size: 0.9em; /* Réduction de la taille du texte pour les champs de formulaire */
+  }
+
+  .contact-form button {
+    font-size: 0.95em; /* Ajustement de la taille du bouton */
+  }
+
+  /* Réduction des marges pour les informations de contact */
+  .contact-info p {
+    font-size: 0.85em; /* Réduction de la taille du texte des infos de contact */
+    margin: 3px 0;
+  }
+}
