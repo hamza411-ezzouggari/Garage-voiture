@@ -118,7 +118,7 @@ function GoogleMap() {
       </div>
       <div className="google-map" style={{ height: '32vh', width: '100%' }}>
         <GoogleMapReact
-          bootstrapURLKeys={{ key: "" }}
+          bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_MAPS_API_KEY }}
           defaultCenter={defaultProps.center}
           defaultZoom={defaultProps.zoom}
         >
